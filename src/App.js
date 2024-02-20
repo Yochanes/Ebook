@@ -7,7 +7,7 @@ import Search from './components/Search/Search'
 
 function App() {
 	return (
-		<div classNameName='App'>
+		<div className='App'>
 			<Header />
 			<div className='container'>
 				<Banner />
