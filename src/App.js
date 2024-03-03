@@ -1,21 +1,16 @@
-import './App.css'
-import Banner from './components/Banner/Banner'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import Books from './components/Home/Books'
-import Search from './components/Search/Search'
+import React from 'react'
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import HomePage from './page/HomePage'
+import SearchPage from './page/SearchPage'
 
 function App() {
 	return (
-		<div className='App'>
-			<Header />
-			<div className='container'>
-				<Banner />
-				<Search />
-				<Books />
-				<Footer />
-			</div>
-		</div>
+		<Router>
+			<Routes>
+				<Route path='/' element={<HomePage />} />
+				<Route path='search' element={<SearchPage />} />
+			</Routes>
+		</Router>
 	)
 }
 

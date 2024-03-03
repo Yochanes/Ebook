@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../../App.css'
 import Izbrannoe from '../../img/izbrannoe.png'
 import Logo from '../../img/logo.png'
@@ -51,9 +52,9 @@ function Header() {
 				<div className={`profile-menu ${isProfileMenuOpen ? 'active' : ''}`}>
 					<ul className='profile-nav'>
 						<li>
-							<a href='#' className='profile-nav__link'>
+							<Link to='/search' className='profile-nav__link'>
 								Profile
-							</a>
+							</Link>
 						</li>
 						<li>
 							<a href='#' className='profile-nav__link'>
